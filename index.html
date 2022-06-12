@@ -31,13 +31,13 @@
           >
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a href="" class="link1">Agencja</a>
+              <a href="./index.html" class="navigation-list-link link1 activepage">Agencja</a>
             </li>
             <li class="navigation-list-item">
-              <a href="./portfolio.html" class="link1">Portfolio</a>
+              <a href="./portfolio.html" class="navigation-list-link link1">Portfolio</a>
             </li>
             <li class="navigation-list-item">
-              <a href="" class="link1">Kontakt</a>
+              <a href="" class="navigation-list-link link1">Kontakt</a>
             </li>
           </ul>
           <adress class="adress list">
@@ -70,7 +70,7 @@
       <section class="section main-header-background1">
         <div class="main-contanier contanier">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button main-button" type="button">Zamów usługę</button>
+          <button class="button main-button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
 
@@ -156,6 +156,7 @@
                 width="370"
                 height="294"
               />
+              <p class="third-section-post">APLIKACJE KOMPUTEROWE</p>
             </li>
             <li class="third-section-li">
               <img
@@ -165,6 +166,7 @@
                 height="294"
                 class="third-section-li"
               />
+             <p class="third-section-post">APLIKACJE MOBILNE</p>
             </li>
             <li class="third-section-li">
               <img
@@ -173,6 +175,7 @@
                 width="370"
                 height="294"
               />
+              <p class="third-section-post">ROZWIĄZANIA GRAFICZNE</p>
             </li>
           </ul>
         </div>
@@ -415,7 +418,7 @@
         <div class="footer-adress">
         <a href="./index.html" class="logo">Web<span class="studiofooter">Studio</spasn></a>
         <address class="footer-adress1">m. Warszawa, Aleje Jerozolimskie 21
-     </address>
+        </address>
         <address>
           <ul class="list">
             <li class="footer-adress2">
@@ -430,37 +433,54 @@
         <div class="footer-social">
           <h2 class="footer-joinus">DOŁĄCZ DO NAS</h2>
           <ul class="footer-social-list list">
-                  <li class="footer-li">
-                  <a class="footer-circle link">
-                  <svg class="footer-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                  </a>
-                  </li>
-                  <li class="footer-li">
-                  <a class="footer-circle link">
-                  <svg class="footer-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  </a>
-                  </li>
-                  <li class="footer-li">
-                  <a class="footer-circle link">
-                  <svg class="footer-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  </a>
-                  </li>
-                  <li class="footer-li">
-                  <a class="footer-circle link">
-                  <svg class="footer-icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                  </a>
-                  </li>
-                </ul>
+            <li class="footer-li">
+              <a class="footer-circle link">
+              <svg class="footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-circle link">
+              <svg class="footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-circle link">
+              <svg class="footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-circle link">
+              <svg class="footer-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
+
+    <!---- ======= B A C K D R O P ======= -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+         <svg class="x" width="18" height="18">
+           <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button> 
+      </div>
+     </div>
+    
+    
+     <script src="./js/modal.js"></script>
+
   </body>
+  
 </html>
